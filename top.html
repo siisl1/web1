@@ -3,39 +3,122 @@
 <head>
 <title>Lilla - note</title>
 
+<style>    
+    a:hover{
+        color: blanchedalmond;
+    }
+
+    @media(max-width:800px){
+      #grid{
+        display: block;
+      }
+      ul{
+        border-right:none;
+      }
+      h1 {
+        border-bottom:none;
+      }
+    }
+
+    a{color : black;
+      text-decoration : none;
+    }
+
+    
+    h5{
+        margin: 0px;
+    }
+
+    h1{
+        font-size:45px;
+        text-align: center;
+        text-shadow: 2px 2px gray;
+
+        border-bottom: 3px solid dimgrey;
+        margin: 0px;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+
+    body{
+        margin:0px;
+
+        
+    }
+
+    #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    #grid ul{
+        border-right: 3px solid dimgrey;    
+        width : 70px;
+        margin: 0px;
+        padding: 10px;
+        padding-left: 40px;
+        border-bottom: 3px solid dimgrey;
+    }
+
+    .keystone{
+        background-color:blanchedalmond;
+        width: 100px;
+        border: 5px solid sienna;
+        padding-left:133%;
+        padding-right:133%;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .normalstone{
+        border: 5px solid sienna;
+        margin:0px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        width: 100px;
+        background-color:blanchedalmond;
+    }
+
+</style>
+
 <meta charset="utf - 8">
 </head>
 
 <body>
-    <div style="display: flex;">
     
-    <div>
-    <h5><ul>
-        <br><br><br>
-        <br><br><br><br>
-        <li><a href = "skill.html">기본스킬</a></li>
-        <br><br><br>
-        <li><a href = "mid.html">미드릴리아</a></li>
-        <li><a href = "jg.html">정글릴리아</a></li>
-        <li><a href = "top.html">탑릴리아</a></li>
-    </ul></h5>
-    </div>
     
     <div>
     <h1><a href = "home.html">Lillia - note</a></h1>
-    <h2>릴리아</h2>
+    </div>
+
+    <div id="grid">
+    <div>
+        <h5><ul>
+            <li><a href = "skill.html">기본스킬</a></li>
+            <br>
+            <li><룬></li>
+            <li><a href = "mid.html">미드릴리아</a></li>
+            <li><a href = "jg.html">정글릴리아</a></li>
+            <li><a href = "top.html">탑릴리아</a></li>
+        </ul></h5>
+    </div>
 
     <div>
         <table>
             <tr>
-                <td><img src="RUNE/Precision/Keystone/Conqueror.png" style="height: 70px; width: 70px;"></td>
-                <td><img src="RUNE/Precision/Normalstone/Heroism/Presence of Mind.png" style="height: 50px; width: 50px;"></td>
-                <td><img src="RUNE/Precision/Normalstone/Legend/Legend_Tenacity.png" style="height: 50px; width: 50px;"></td>
-                <td><img src="RUNE/Precision/Normalstone/Combat/Last Stand.png" style="height: 50px; width: 50px;"></td>
+                </tr><td><img src="RUNE/Precision/Keystone/Conqueror.png" class="keystone"></td><tr>
+                <td><img src="RUNE/Precision/Normalstone/Combat/Coup de Grâce.png" class="normalstone"></td>
+                <td><img src="RUNE/Precision/Normalstone/Heroism/Presence of Mind.png" class="normalstone" ></td>
+                <td><img src="RUNE/Precision/Normalstone/Legend/Legend_Tenacity.png" class="normalstone" ></td>
             </tr>
             <tr>
-                <td><img src="RUNE/Inspiration/Normalstone/Tomorrow/Biscuit Delivery.png" style="height: 50px; width: 50px;"></td>
-                <td><img src="RUNE/Inspiration/Normalstone/Beyond/Time Warp Tonic.png" style="height: 50px; width: 50px;"></td>
+                <td><img src="RUNE/Inspiration/Normalstone/Tomorrow/Biscuit Delivery.png" class="normalstone" style="margin: left 100px;"></td>
+                <td><img src="RUNE/Inspiration/Normalstone/Beyond/Time Warp Tonic.png" class="normalstone"></td>
             </tr>
         </table>
+    </div>
     </div>
